@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Tauri', sans-serif;
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 .back {
     position:fixed;
@@ -25,7 +26,7 @@
     position: fixed;
 }
 .topclone {
-    width: 100vw; height: 10vh;
+    width: 100%; height: 10vh;
 }
 .socials, .mainm {
     display: flex;
@@ -37,10 +38,12 @@
 .mainm a {
     margin-right: 3vw;
     color: rgba(174, 172, 159, 1);
-    /* text-decoration: none; */
 }
 .mainm a:hover {
     color: rgba(245, 246, 212, 1);
+}
+.mainm a:indeterminate {
+
 }
 .contact {
     margin-left: 6vw;
@@ -104,6 +107,7 @@ h1, h2 {
 .catalog {
     width: 82vw;
     margin-left: 6vw;
+    margin-right: 6vw;
     background-color: rgba(82, 82, 80);
     padding: 2vw 3vw 2vw 3vw;
     display: flex;
@@ -116,22 +120,23 @@ h1, h2 {
     margin: 1vw 1vw 1vw 1vw;
 }
 .about_us {
-    height: 500px;
-    width: 88vw;
+    width: 82vw;
     margin-left: 6vw;
     background-color: rgba(82, 82, 80);
     margin-bottom: 5vh;
+    padding: 2vw 3vw 2vw 3vw;
+    display: flex;
 }
-footer {
-    width: 100vw; height: 15vh;
+.bot {
+    width: 100%; height: 15vh;
     background-color: rgba(82, 82, 80, 0.8);
 }
-footer a {
+.mailnum a {
     color: rgba(174, 172, 159, 1);
     text-decoration: none;
     margin: 3vh 5vw 0vh 5vw;
 }
-footer a:hover {
+.mailnum a:hover {
     color: rgba(245, 246, 212, 1);
 }
 .mailnum {
@@ -143,4 +148,13 @@ footer a:hover {
    text-align: center;
    font-size: 14px;
    margin-top: 4vh;
+}
+.abouttxt {
+    color: rgba(174, 172, 159, 1);
+    width: 30%;
+    margin-left: 7%;
+}
+.about_us img {
+    width: 50%;
+    margin: auto;
 }
