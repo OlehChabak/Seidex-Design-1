@@ -24,6 +24,7 @@
     justify-content: center;
     display: flex;
     position: fixed;
+    z-index: 5;
 }
 .topclone {
     width: 100%; height: 10vh;
@@ -55,10 +56,10 @@
 .socials img {
     margin-left: 1vw;
 }
-.logot {
+/* .logot {
     margin-left: 6vw;
     margin-right: auto;
-}
+} */
 .midtext {
     margin-top: 17vh;
     text-align: center;
