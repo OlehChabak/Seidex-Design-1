@@ -16,7 +16,7 @@
     <header>
 
         <div class="top">
-                    <a class="contact" href="#">Contact us</a>
+                    <a class="contact" href="#Main">Contact us</a>
             <ul class="socials">
                     <a href="https://t.me/Seidex">
                     <img src="images/tg.png" width="40px" height="40px" alt="telegram"></a>
@@ -25,12 +25,20 @@
                     <a href="https://www.facebook.com/seidhex/">
                     <img src="images/fb.png" width="40px" height="40px" alt="facebook"></a>
             </ul>
-                    <!-- <img class="logot" src="images/logo.png" alt="Seidex"> -->
             <ul class="mainm">
                     <a href="#Main">Main</a> 
                     <a href="#Catalog">Catalog</a>
                     <a href="#About">About us</a>
             </ul>
+        </div>
+        <div class="burger">
+            <div class="menu-trigger"><a onclick="showme()"><img class="menuimg" src="images/menu.png" alt=""></a></div>
+            <div class="menu-close"><a onclick="hideme()"><img class="menucimg" src="images/menuc3.png" alt=""></a></div>
+        </div>
+        <div class="main-menu">
+            <a href="#Main">Main</a> 
+            <a href="#Catalog">Catalog</a>
+            <a href="#About">About us</a>
         </div>
         <div class="topclone" id="Main"></div>
     </header>
@@ -73,14 +81,23 @@
         <h1>About us</h1>
     </div>
     <div class="about_us">
-        <div class="abouttxt"> We are Seidex Design Studio - a team of young, modern and creative designers and architects. <br> <br>
-            Our portfolio includes international and domestic experience in interior design. <br> <br>
+        <div class="abouttxt">We are Seidex Design Studio - a team of young, modern and creative designers and architects.
+            Our portfolio includes international and domestic experience in interior design.
             More than 6 years of experience in design, development of plans, master plans, landscape design and construction.
         </div>
-        <img src="images/team.png" alt="">
+        <div class="teamimg">
+        <img src="images/team.png" alt=""></div>
     </div>
     <footer>
     <div class="bot">
+        <ul class="socials2">
+            <a href="https://t.me/Seidex">
+            <img src="images/tg.png" width="40px" height="40px" alt="telegram"></a>
+            <a href="https://www.instagram.com/_seidex_/">
+            <img src="images/inst.png" width="40px" height="40px" alt="instagram"></a>
+            <a href="https://www.facebook.com/seidhex/">
+            <img src="images/fb.png" width="40px" height="40px" alt="facebook"></a>
+        </ul>
         <div class="mailnum">
         <a href="tel:+380637313852">+380637313852</a>
         <a href="mailto:olehchabak0410@gmail.com">olehchabak0410@gmail.com</a>
@@ -88,6 +105,19 @@
         <p class="rights">Copyright 2021 Seidex Design. All rights reserved.</p>
     </div>
     </footer>
-
+    <script type="text/javascript">
+    function hideme() {
+        console.log ("hided");
+        document.getElementsByClassName ('main-menu')[0].style.display="none";
+        document.getElementsByClassName ('menu-close')[0].style.display="none";
+        document.getElementsByClassName ('menu-trigger')[0].style.display="block";
+    }
+    function showme() {
+        console.log ("showed");
+        document.getElementsByClassName ('main-menu')[0].style.display="flex";
+        document.getElementsByClassName ('menu-close')[0].style.display="block";
+        document.getElementsByClassName ('menu-trigger')[0].style.display="none";
+    }
+    </script>
 </body>
 </html>

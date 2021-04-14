@@ -4,6 +4,15 @@
     font-family: 'Tauri', sans-serif;
     font-size: 18px;
     scroll-behavior: smooth;
+    cursor: default;
+}
+a {
+    cursor: pointer;
+}
+:focus {
+    outline-width: none;
+    outline-color: none;
+    outline-style: none;
 }
 .back {
     position:fixed;
@@ -19,7 +28,7 @@
 }
 .top {
     width: 100vw; height: 10vh;
-    background-color: rgba(82, 82, 80, 0.8);
+    background-color: rgba(82, 82, 80, 0.9);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -43,23 +52,18 @@
 .mainm a:hover {
     color: rgba(245, 246, 212, 1);
 }
-.mainm a:indeterminate {
-
-}
 .contact {
     margin-left: 6vw;
     color: black;
+    cursor: default;
 }
 .socials {
     margin-left: 1vw;
 }
 .socials img {
     margin-left: 1vw;
+    cursor: pointer;
 }
-/* .logot {
-    margin-left: 6vw;
-    margin-right: auto;
-} */
 .midtext {
     margin-top: 17vh;
     text-align: center;
@@ -86,10 +90,10 @@
 .about {
     background-color:rgba(82, 82, 80, 0.8);
     color: rgba(174, 172, 159, 1);
-    width: 60vw;
+    width: 77vw;
     text-align: center;
-    margin: 25vh 20vw 1vh 20vw;
-    padding: 10px 20px 10px 20px;
+    margin: 25vh 10vw 1vh 10vw;
+    padding: 1.5vh 3vw 1.5vh 3vw;
     border-radius: 10px;
 }
 .cataloghead, .abouthead {
@@ -100,6 +104,7 @@
     display: flex;
     margin-left: 6vw;
     margin-bottom: 5px;
+    
 }
 h1 {
     color: rgba(174, 172, 159, 1);
@@ -129,8 +134,8 @@ h1 {
     display: flex;
 }
 .bot {
-    width: 100%; height: 15vh;
-    background-color: rgba(82, 82, 80, 0.8);
+    width: 100%; height: auto;
+    background-color: rgba(82, 82, 80, 0.9);
 }
 .mailnum a {
     color: rgba(174, 172, 159, 1);
@@ -148,22 +153,197 @@ h1 {
 .rights {
    text-align: center;
    font-size: 14px;
-   margin-top: 4vh;
+   margin-top: 5vh;
 }
 .abouttxt {
     color: rgba(174, 172, 159, 1);
-    width: 30%;
+    width: 28%;
     margin-left: 7%;
 }
-.about_us img {
+.teamimg {
     width: 50%;
     margin: auto;
 }
+.teamimg img {
+    width: 100%;
+}
+.catalog > div {
+    position: relative;
+}
 h2 {
     position: absolute;
-    margin: 1vh;
-    padding: 2vh;
+    padding: 1vh;
     color: rgba(82, 82, 80);;
     background-color: rgba(174, 172, 159, 1);
     font-size: 14px;
+    left: 1vh;
+    top: 0;
 }
+.socials2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.socials2 img {
+    margin: 2vh;
+}
+.burger {
+    width: 100vw; height: 10vh;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.main-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(82, 82, 80);
+    z-index: 7;
+    width: 100vw;
+    transition: .5s all;
+    z-index: 9;
+    padding: 3vh 0;
+}
+.main-menu a {
+    padding: 10px;
+    width: 100%;
+    color: rgba(174, 172, 159, 1);
+    background-color: rgba(82, 82, 80);
+    text-align: center;
+    font-size: 18px;
+}
+.menu-trigger {
+    display: none;
+    position: fixed;
+    right: 3vh;
+    width: 6vh;
+    z-index: 10;
+}
+.menu-close {
+    display: none;
+    position: fixed;
+    left: 3vh;
+    width: 6vh;
+    z-index: 10;
+}
+.menuimg {
+    height: 6vh;
+}
+.menucimg {
+    height: 5.5vh;
+}
+@media (max-width: 800px) {
+    *{font-size: 16px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 12px;
+        left: 3vh;
+    }
+    .catalog {
+        flex-direction: column;
+    }
+    .catalog img {
+        width: 90%;
+    }
+    .catalog div {
+        display: flex;
+        justify-content: center;
+    }
+    .about_us {
+        display: inline-block;
+    }
+    .abouttxt {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        text-align: justify;
+        margin-bottom: 3vh;
+    }
+    .teamimg {
+        width: 70%;
+    }
+    .rights {
+        font-size: 12px;
+    }
+    .midtext {
+        font-size: 34px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 8px 38px;
+    }
+    .socials, .mainm, .contact {
+        display: none;
+    }
+    .teamimg {
+        width: 80%;
+    }
+    .mailnum a {
+        margin: 0 5vh;
+    }
+    .socials2 {
+        display: flex;
+    }
+    .menu-trigger {
+        display: block;
+    }
+}
+@media (max-width: 600px) {
+    *{font-size: 14px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 11px;
+        left: 2vh;
+    }
+    .rights {
+        font-size: 10px;
+        margin-top: 6vh;
+    }
+    .midtext {
+        font-size: 32px;
+    }
+    .teamimg {
+        width: 90%;
+    }
+    .midtext {
+        color: black;
+    }
+}
+@media (max-width: 400px) {
+    *{font-size: 13px;
+    }
+    .mailnum {
+        flex-direction: column;
+    }
+    .mailnum a {
+        margin: 1.5vh 5vw 0vh 5vw;
+    }
+    .rights {
+        margin-top: 4vh;
+    }
+    .midtext {
+        font-size: 28px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 7px 36px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .main-menu a {
+        font-size: 16px;
+    }
+    
+}
+
